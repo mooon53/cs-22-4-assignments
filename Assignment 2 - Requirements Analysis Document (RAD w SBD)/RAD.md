@@ -31,7 +31,7 @@ d. The length of the document should be between 4-8 pages.
 
 - **For example:** 
 
-  <span style="color:blue"> ***“The project namely IOT based home automation system is selected for the following reasons:***</span>
+  <span style="color:blue"> ***“The project namely IOT based home automation system is selected for the following reasons:***</span>
 
   - <span style="color:blue"> 	*This can digitally monitor and control the home devices such as electronic appliances, light systems, etc., from a remote location using smartphones/tablets. You have to just connect to the internet.*</span>
 
@@ -89,7 +89,7 @@ d. The length of the document should be between 4-8 pages.
 ​		***For example***
 
 - **<span style="color:green">*i) System boundaries (Software and hardware):*</span>** 
-  - <span style="color:blue">*Software: MQTT server to manage the flow of data between IoT devices, Mobile application, Python language, HTML,  	PHP,Algorithms used, etc.*</span>
+  - <span style="color:blue">*Software: MQTT server to manage the flow of data between IoT devices, Mobile application, Python language, HTML,  	PHP,Algorithms used, etc.*</span>
   - <span style="color:blue">*Hardware: Raspberry Pi 4, Sensors, Power supply, USB web camera, etc.*</span>
   - <span style="color:blue">*Interfaces: To name a few such as the Internet via WiFi, backup methods such as 4G hotspot,  etc.*</span>
 
@@ -100,27 +100,27 @@ d. The length of the document should be between 4-8 pages.
 
 2. **Product features (Ref: https://medium.com/omarelgabrys-blog/requirements-engineering-introduction-part-1-6d49001526d3) (To understand functional and non-functional requirements:** 
 
-   This section describes the functionality that you want to have in your product such as the components used for the application and its functionality, appearance, performance in terms of speed/time, etc. You can specify them in the form of functional and non-functional requirements. <span style="color:blue">A minimum number of 7 requirements (9 in case of selecting an existing application) is to be expected for your application. That includes functional as well as non-functional requirements cumulatively. However, it is highly probable that you will need more than the minimum amount to fully cover all the requirements. </span>
+   This section describes the functionality that you want to have in your product such as the components used for the application and its functionality, appearance, performance in terms of speed/time, etc. You can specify them in the form of functional and non-functional requirements. <span style="color:blue">A minimum number of 7 requirements (9 in case of selecting an existing application), counting functional/non-functiona/security requirements cumulatively. However, it is highly probable that you will need more than the minimum amount to fully cover all the requirements. 
+   
+   While listing your requirements, you are also required to assign the level of priority to the requirements as done in the examples below. The priority levels are: High [**H**], Medium [**M**] and Low [**L**].
+   
+   <span style="color:red">Note:</span> that **at least 2** should be **Security Requirements**.</span>
 
    
 
    ​	**A.** **Functional requirements:** 
-
    ​		Write the requirements that are directly connected with the functionality of the application. 
 
    ​		**For example**, 
 
    - ​	<span style="color:blue">*i) “The functional requirements of a **smart home automation system** are:*</span>
-     - <span style="color:blue">*The system should give the option to the user to select the mode between cloud and stand-alone.*</span>
-     - <span style="color:blue">*The system should allow users to control and monitor their home devices using smartphones/tablets.*</span>
-     - <span style="color:blue">*The system should perform user authentication **1(Security requirement).***</span>
-     - <span style="color:blue">*The system should give control of the smart devices to the authorized user **(Security requirement).***</span>
+     - <span style="color:blue">* [**L**] The system should give the option to the user to select the mode between cloud and stand-alone.*</span>
+     - <span style="color:blue">* [**H**]The system should allow users to control and monitor their home devices using smartphones/tablets.*</span>
      - <span style="color:blue">*The system should...*</span>
      - <span style="color:blue">*The system should...  ”*</span>
    - <span style="color:green">*ii) “The functional requirements of a **simple calculator** are:* </span>
-     - <span style="color:green">*The system/product should perform all the arithmetic operations according to the given keys.*</span>
-     - <span style="color:green">*The system/product should have the On/Off button to switch on or switch off the calculator.*</span>
-     - <span style="color:green">*To access the application, one should require authentication.* </span>**(Security requirement) [^1]**
+     - <span style="color:green">*  [**H**] The system/product should perform all the arithmetic operations according to the given keys.*</span>
+     - <span style="color:green">* [**M**] The system/product should have the On/Off button to switch on or switch off the calculator.*</span>
      - <span style="color:green">*The system should ...”*</span>
 
    
@@ -132,14 +132,30 @@ d. The length of the document should be between 4-8 pages.
    **For example:**,
 
    - <span style="color:blue">*“The nonfunctional requirements of a **smart home automation system** are:*</span>
-     - <span style="color:blue">*The system should be able to monitor the average latency between the gateway and the devices.*</span>
-     - <span style="color:blue">*The system should…”*</span>
+     - <span style="color:blue">* [**L**] The system should be able to monitor the average latency between the gateway and the devices.*</span>
+     - <span style="color:blue">*…”*</span>
    - <span style="color:green">*“The nonfunctional requirements of a **simple calculator** are:*</span>
-     - <span style="color:green">*The layout for the keys should not exceed more space than the layout of the calculator.*</span>
-     - <span style="color:green">*The system should be able to work with a minimum of 10 digits.*</span>
-     - <span style="color:green">*The system should not exceed the specified memory range.*</span>
-     - <span style="color:green">*The system should complete the arithmetic operation computation within t milliseconds.*</span>
+     - <span style="color:green">* [**H**] The layout for the keys should not exceed more space than the layout of the calculator.*</span>
+     - <span style="color:green">* [**H**] The system should be able to work with a minimum of 10 digits.*</span>
+     - <span style="color:green">* [**M**] The system should not exceed the specified memory range.*</span>
+     - <span style="color:green">* [**L**] The system should complete the arithmetic operation computation within t milliseconds.*</span>
      - <span style="color:green">***…”***</span>
+
+   **C.** **Security requirements:** 
+
+   ​	Write the requirements that are the security requirements of your application (Refer to the checklist given in SBD document-Phase 1), etc. 
+
+   ​		**For example**, 
+
+   - ​	<span style="color:blue">*i) "The functional requirements of a **smart home automation system** are:*</span>
+     - <span style="color:blue">* [**M**] The system should perform user authentication.*</span>
+     - <span style="color:blue">* [**H**] The system should give control of the smart devices to the authorized user.*</span>
+     - <span style="color:blue">*The system should...  ”*</span>
+   - ​	<span style="color:green">*ii) "The functional requirements of a **simple calculator** are:* </span>
+     - <span style="color:green">* [**M**] To access the application, one should require authentication.* </span>
+     - <span style="color:green">*The system should ...”*</span>
+
+<span style="color:red">Note:</span> You are recommended to use the given priorities to produce a plan for your sprints such that you are able to deliver an **MVP** by the end of **Sprint 3**.
 
 3. **Conclusion:** Write the concluding remarks here. You can do this by **highlighting noteworthy decisions and challenges** for the next phase that you recognized.
 
@@ -152,4 +168,3 @@ d. The length of the document should be between 4-8 pages.
 ​																																										
 
 ​																																										Prepared by: Dipti K. Sarmah                               
-
